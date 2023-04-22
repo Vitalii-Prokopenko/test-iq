@@ -1,3 +1,25 @@
+.btn-next, .btn-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0d0c11;
+  background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+  border: none;
+  border-radius: 20px;
+}
+
 /* == GLOBAL STYLES RESET == */
 /* headings and paragraphs */
 p,
@@ -41,6 +63,34 @@ a {
 /* == BASIC STYLES == */ /* === CONTAINER === */
 .container {
   margin: 0 auto;
+}
+
+/* BUTTONS */
+.btn-start {
+  width: 189px;
+  height: 41px;
+}
+.btn-start--big {
+  width: 200px;
+  height: 44px;
+  border-radius: 50px;
+}
+.btn-start--transparent {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: transparent;
+  border-radius: 50px;
+}
+
+.btn-next {
+  width: 189px;
+  height: 41px;
+}
+.btn-next.disabled {
+  color: #8e8e8e;
+  background: #dadada;
+  -webkit-box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Visually hidden elements */
