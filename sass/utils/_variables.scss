@@ -6,12 +6,27 @@ $secondaryFont: 'Merriweather', serif;
 $mobileMenuFont: 'Roboto', sans-serif;
 $headerFont: 'Yeseva One', cursive;
 
-// Text colors
+// Base Colors
+$mainColor: #FFFFFF;
+$secondaryColor: #272727;
+$accentColor: #FFC700;
 
+// Button Colors
+$btnTextColor: #0D0C11;
+$btnDisabledTextColor: #8e8e8e;
+$btnDisabledBgColor: #dadada;
+$btnDisabledShadowColor: rgba(0, 0, 0, 0.25);
 
-// Background colors
+// Test Track Colors
+$testTrackBgColor: #F2F3F3;
+$testCompletionTrackBgColor: #3BDE7C;
 
-// Border colors
+// Other Colors
+$accentMenuColor: #F4CE0C;
+$footerColor: rgba(255, 255, 255, 0.5);
+$burgerColor: #696969;
+$checkedBoxColor: #2950C2;
+$callBgColor: #EB1B00;
 
 // Breakpoints
 

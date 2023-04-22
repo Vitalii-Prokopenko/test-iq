@@ -14,7 +14,7 @@
   line-height: 1.2857142857;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #0d0c11;
+  color: #0D0C11;
   background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
   border: none;
   border-radius: 20px;
@@ -76,8 +76,8 @@ a {
   border-radius: 50px;
 }
 .btn-start--transparent {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   background: transparent;
   border-radius: 50px;
 }

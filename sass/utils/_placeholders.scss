@@ -11,8 +11,8 @@
   line-height: calc(18 / 14);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #0d0c11;
-  background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+  color: $btnTextColor;
+  background: radial-gradient(50% 50% at 50% 50%, $accentColor 0%, $accentColor 100%);
   border: none;
   border-radius: 20px;
 }
