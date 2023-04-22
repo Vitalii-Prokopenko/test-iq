@@ -1,0 +1,25 @@
+.test {
+  width: 100%;
+//   height: calc(100vh - 46px);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-image: url(../images/webp/bg-sky.webp);
+  @include pixel-ratio-2x {
+    background-image: url(../images/webp/bg-sky-@2x.webp);
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn-wrap {
+    padding: 21px 0;
+  }
+}
