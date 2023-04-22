@@ -1,0 +1,23 @@
+// Mixin for styles for mobile phone
+
+@mixin mobile {
+  @media screen and (min-width: $minMobile) and (max-width: calc($minTablet - 1px)) {
+    @content;
+  }
+}
+
+// Mixin for transitions
+
+@mixin myTransition($property) {
+  transition: $property $transitionTime $transitionFunction;
+}
+
+// Mixin for pixel-ratio-media-queries
+
+@mixin pixel-ratio-2x {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}

@@ -1,0 +1,40 @@
+/* HEADER */
+.header {
+  height: 46px;
+  background-color: $secondDarkColor;
+
+  &__container {
+    padding: 0 15px;
+
+    display: grid;
+    grid-template-columns: 24px minmax(25px, auto);
+    column-gap: 9px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__brain-picture {
+    margin-right: 7px;
+  }
+
+  &__text {
+    font-family: $additionalFont;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $accentColor;
+  }
+}

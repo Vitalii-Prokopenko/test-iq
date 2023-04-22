@@ -1,0 +1,17 @@
+/* Menu */
+
+/* Menu open button */
+.menu-toggle {
+  display: inline-flex;
+  @extend %svg-btn;
+  fill: $burgerColor;
+
+  &__icon {
+    @include myTransition(fill);
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: $accentColor;
+  }
+}

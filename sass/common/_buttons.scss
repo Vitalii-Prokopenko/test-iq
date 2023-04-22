@@ -4,6 +4,12 @@
   @extend %btn;
   width: 189px;
   height: 41px;
+  @include myTransition(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 8px 20px $btnDisabledShadowColor;
+  }
 
   &--big {
     width: 200px;
@@ -16,6 +22,14 @@
     border: 1px solid $mainColor;
     background: transparent;
     border-radius: 50px;
+    @include myTransition(background-color);
+    @include myTransition(color);
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+      color: $secondaryColor;
+    }
   }
 }
 

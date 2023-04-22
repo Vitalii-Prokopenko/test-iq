@@ -1,0 +1,154 @@
+/* FOOTER */
+.footer {
+  // 1st block of footer
+  &__first {
+    width: 100%;
+    height: 339px;
+
+    background: url(../images/png/gradient.png), url(../images/png/bg-sky-splash.png);
+    @include pixel-ratio-2x {
+      background: url(../images/png/gradient-@2x.png), url(../images/png/bg-sky-splash-@2x.png);
+    }
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &-container {
+      padding: 83px 29px 28px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-text-quote {
+      position: relative;
+      width: 248px;
+      font-family: $additionalFont;
+      font-size: 18px;
+      line-height: calc(23 / 18);
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 23px;
+        height: 22.35px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        top: -40px;
+        left: -12px;
+        background-image: url(../images/webp/open-quote.webp);
+      }
+
+      &::after {
+        bottom: 3px;
+        right: -4px;
+        background-image: url(../images/webp/close-quote.webp);
+      }
+    }
+  }
+
+  //   2nd block of footer
+
+  &__second {
+    &-container {
+      padding: 38px 11px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-text {
+      margin-bottom: 29px;
+      width: 298px;
+      font-size: 16px;
+      line-height: calc(24 / 16);
+      letter-spacing: 0.05em;
+      color: $secondaryColor;
+    }
+
+    &-text-upper {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-text-bold {
+      font-weight: 700;
+    }
+  }
+
+  //   3rd block of footer
+  &__third {
+    width: 100%;
+    height: 533px;
+
+    background-image: url(../images/webp/bg-sky.webp);
+    @include pixel-ratio-2x {
+      background: url(../images/webp/bg-sky-@2x.webp);
+    }
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &-container {
+      padding: 54px 12px 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-text:nth-child(1) {
+      margin-bottom: 14px;
+      width: 262px;
+      font-family: $secondaryFont;
+      font-size: 15px;
+      line-height: calc(20 / 15);
+      letter-spacing: 0.05em;
+      color: $mainFont;
+    }
+
+    &-text-accent {
+      font-weight: 900;
+      color: $accentColor;
+    }
+
+    &-text:nth-child(2) {
+      margin-bottom: 33px;
+      padding: 27px 15px 28px 14px;
+      width: 303px;
+      font-family: $secondaryFont;
+      font-size: 16px;
+      line-height: calc(23 / 16);
+      letter-spacing: 0.05em;
+      color: $secondDarkColor;
+      background-color: rgba(243, 243, 242, 0.8);
+      border-radius: 20px;
+    }
+
+    &-text-bold {
+      font-weight: 700;
+    }
+
+    &-btn {
+      margin-bottom: 52px;
+    }
+
+    &-rights {
+      font-family: $mobileMenuFont;
+      font-size: 10px;
+      line-height: calc(23 / 10);
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: $footerColor;
+    }
+  }
+}

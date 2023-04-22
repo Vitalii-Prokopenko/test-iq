@@ -22,14 +22,160 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="container header__container">
+        <!-- Menu open button -->
+        <button
+          class="menu-toggle header__btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="24" height="16" aria-label="Menu open button">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="header__wrap">
+          <!-- Brain -->
+          <picture class="header__brain-picture">
+            <source
+              srcset="./images/webp/brain.webp 1x, ./images/webp/brain-@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/png/brain.png 1x, ./images/png/brain-@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="header__brain-img"
+              src="./images/png/brain.png"
+              alt="brain"
+              width="46"
+              height="46"
+            />
+          </picture>
+          <!-- Text -->
+          <p class="header__text">тест на определение IQ</p>
+        </div>
+      </div>
+    </header>
     <main class="main">
-      <button type="button" class="btn-start">пройти тест</button>
-      <button type="button" class="btn-start btn-start--big">пройти тест</button>
-      <button type="button" class="btn-start btn-start--big btn-start--transparent">пройти тест</button>
-      <button type="button" class="btn-next">далее</button>
-      <button type="button" class="btn-next disabled">далее</button>
+      <section class="start">
+        <div class="container start__container">
+          <p class="start__subtitle">Пройдите точный и быстрый</p>
+          <h1 class="start__title">
+            тест на определение <span class="start__iq" lang="en">iq</span>
+          </h1>
+          <!-- Brain -->
+          <picture class="start__brain-picture">
+            <source
+              srcset="./images/webp/brain.webp 1x, ./images/webp/brain-@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/png/brain.png 1x, ./images/png/brain-@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="start__brain-img"
+              src="./images/png/brain.png"
+              alt="brain"
+              width="154"
+              height="150"
+            />
+          </picture>
+          <button type="button" class="btn-start start__btn">пройти тест</button>
+          <p class="start__text">
+            <span class="start__accent-text"
+              >и получите рекомендации по развитию своего интеллекта</span
+            >
+            и улучшению финансового благосостояния и личной жизни
+          </p>
+          <button
+            class="start__btn-scroll"
+            type="button"
+            aria-expanded="false"
+            aria-controls="footer"
+          >
+            <div class="start__btn-icon-wrap">
+              <svg
+                class="start__btn-scroll-icon"
+                width="7.27"
+                height="7.27"
+                aria-label="footer scroll button"
+              >
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            Подробнее
+          </button>
+        </div>
+      </section>
+      <!-- <button type="button" class="btn-start">пройти тест</button>
+        <button type="button" class="btn-start btn-start--big">пройти тест</button>
+        <button type="button" class="btn-start btn-start--big btn-start--transparent">
+          пройти тест
+        </button>
+        <button type="button" class="btn-next">далее</button>
+        <button type="button" class="btn-next disabled">далее</button> -->
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <!-- 1st block -->
+      <section class="footer__first">
+        <div class="container footer__first-container">
+          <p class="footer__first-text-quote">
+            Профессиональный IQ-тест позволяет не только определить коэффициент вашего интеллекта,
+            но и выработать список рекомендаций для повышения этого показателя.
+          </p>
+        </div>
+      </section>
+      <!-- 2nd block -->
+      <section class="footer__second">
+        <div class="container footer__second-container">
+          <p class="footer__second-text">
+            Также по результатам теста <span class="footer__second-text-upper">вы получите</span> подробные
+            <span class="footer__second-text-upper">советы</span> по определению наиболее перспективной
+            <span class="footer__second-text-upper">для вашего типа</span>
+            <span class="footer__second-text-bold">интеллекта</span>
+            <span class="footer__second-text-upper">сферы деятельности</span>, которая принесет вам
+            скорейший финансовый результат.
+          </p>
+          <picture class="footer__brain-scheme-picture">
+            <source
+              srcset="./images/webp/brain-scheme.webp 1x, ./images/webp/brain-scheme-@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/png/brain-scheme.png 1x, ./images/png/brain-scheme-@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="footer__brain-scheme-img"
+              src="./images/png/brain-scheme.png"
+              alt="brain-scheme"
+              width="232"
+              height="180"
+            />
+          </picture>
+          <button type="button" class="btn-start btn-start--big">пройти тест</button>
+        </div>
+      </section>
+      <!-- 3rd block -->
+      <section class="footer__third">
+        <div class="container footer__third-container">
+          <p class="footer__third-text">
+            Прохождение теста займет у вас не более <span class="footer__third-text-accent">12 минут</span>, а его результаты вы сможете <span class="footer__third-text-accent">использовать всю жизнь.</span>            
+          </p>
+          <p class="footer__third-text">
+            Профессиональная интерпретация и детально <span class="footer__third-text-bold">проработанные рекомендации</span>  позволят вам
+            качественно <span class="footer__third-text-bold">изменить все аспекты своей жизни</span>: от финансового до любовного.
+          </p>
+          <button type="button" class="btn-start btn-start--big btn-start--transparent footer__third-btn">
+            пройти тест
+          </button>
+          <p class="footer__third-rights">&#64; 2019</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

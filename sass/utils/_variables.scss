@@ -4,12 +4,13 @@
 $mainFont: 'PT Serif', serif;
 $secondaryFont: 'Merriweather', serif;
 $mobileMenuFont: 'Roboto', sans-serif;
-$headerFont: 'Yeseva One', cursive;
+$additionalFont: 'Yeseva One', cursive;
 
 // Base Colors
 $mainColor: #FFFFFF;
 $secondaryColor: #272727;
 $accentColor: #FFC700;
+$mainBgColor: rgba(13, 12, 17, 0.728);
 
 // Button Colors
 $btnTextColor: #0D0C11;
@@ -23,15 +24,21 @@ $testCompletionTrackBgColor: #3BDE7C;
 
 // Other Colors
 $accentMenuColor: #F4CE0C;
+$secondDarkColor: #181818;
+$headerBgShadowColor: rgba(0, 0, 0, 0.25);
 $footerColor: rgba(255, 255, 255, 0.5);
 $burgerColor: #696969;
 $checkedBoxColor: #2950C2;
 $callBgColor: #EB1B00;
 
 // Breakpoints
-
+$minMobile: 320px;
+$minTablet: 768px;
 
 
 // Transitions
+$transitionFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionTime: 500ms;
+
 
 // Other variables
