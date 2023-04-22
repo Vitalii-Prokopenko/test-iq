@@ -1,6 +1,5 @@
 /* Menu */
 
-/* Menu open button */
 .menu-toggle {
   display: inline-flex;
   @extend %svg-btn;
@@ -13,5 +12,50 @@
   &:hover &__icon,
   &:focus &__icon {
     fill: $accentColor;
+  }
+}
+
+.menu {
+  background-color: $secondDarkColor;
+
+  &__container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 110px 23px;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+    @include myTransition(transform);
+
+    &.is-open {
+    transform: translateX(0);
+  }
+  }
+
+  &__close {
+    position: absolute;
+    top: 18px;
+    right: 13px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
+  &__link {
+    font-family: $mobileMenuFont;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    text-transform: uppercase;
+    color: $mainFont;
+    @include myTransition(color);
+
+    &:hover,
+    &:focus {
+      color: $accentMenuColor;
+    }
   }
 }

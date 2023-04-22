@@ -111,14 +111,33 @@
           </button>
         </div>
       </section>
-      <!-- <button type="button" class="btn-start">пройти тест</button>
-        <button type="button" class="btn-start btn-start--big">пройти тест</button>
-        <button type="button" class="btn-start btn-start--big btn-start--transparent">
-          пройти тест
-        </button>
-        <button type="button" class="btn-next">далее</button>
+      <!--         <button type="button" class="btn-next">далее</button>
         <button type="button" class="btn-next disabled">далее</button> -->
     </main>
+    <!-- Menu -->
+    <div class="menu__container menu js-menu-container" id="menu">
+      <!-- Menu close button -->
+      <button class="menu-toggle menu__close js-close-menu" type="button">
+        <svg class="menu-toggle__icon" width="28" height="28" aria-label="Menu open button">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <!-- Menu list -->
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link js-menu-main" href="#main">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link js-menu-info" href="#info">Информация о тесте</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link js-menu-test" href="#test">пройти тест</a>
+        </li>
+      </ul>
+    </div>
+    <!-- test -->
+   
+
     <footer class="footer">
       <!-- 1st block -->
       <section class="footer__first">
@@ -133,8 +152,10 @@
       <section class="footer__second">
         <div class="container footer__second-container">
           <p class="footer__second-text">
-            Также по результатам теста <span class="footer__second-text-upper">вы получите</span> подробные
-            <span class="footer__second-text-upper">советы</span> по определению наиболее перспективной
+            Также по результатам теста
+            <span class="footer__second-text-upper">вы получите</span> подробные
+            <span class="footer__second-text-upper">советы</span> по определению наиболее
+            перспективной
             <span class="footer__second-text-upper">для вашего типа</span>
             <span class="footer__second-text-bold">интеллекта</span>
             <span class="footer__second-text-upper">сферы деятельности</span>, которая принесет вам
@@ -164,18 +185,35 @@
       <section class="footer__third">
         <div class="container footer__third-container">
           <p class="footer__third-text">
-            Прохождение теста займет у вас не более <span class="footer__third-text-accent">12 минут</span>, а его результаты вы сможете <span class="footer__third-text-accent">использовать всю жизнь.</span>            
+            Прохождение теста займет у вас не более
+            <span class="footer__third-text-accent">12 минут</span>, а его результаты вы сможете
+            <span class="footer__third-text-accent">использовать всю жизнь.</span>
           </p>
           <p class="footer__third-text">
-            Профессиональная интерпретация и детально <span class="footer__third-text-bold">проработанные рекомендации</span>  позволят вам
-            качественно <span class="footer__third-text-bold">изменить все аспекты своей жизни</span>: от финансового до любовного.
+            Профессиональная интерпретация и детально
+            <span class="footer__third-text-bold">проработанные рекомендации</span> позволят вам
+            качественно
+            <span class="footer__third-text-bold">изменить все аспекты своей жизни</span>: от
+            финансового до любовного.
           </p>
-          <button type="button" class="btn-start btn-start--big btn-start--transparent footer__third-btn">
+          <button
+            type="button"
+            class="btn-start btn-start--big btn-start--transparent footer__third-btn"
+          >
             пройти тест
           </button>
           <p class="footer__third-rights">&#64; 2019</p>
         </div>
       </section>
     </footer>
+    <!-- Javascript -->
+    <!-- Mobile menu -->
+    <!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script> -->
+    <script defer src="js/menu.js"></script>
   </body>
 </html>
