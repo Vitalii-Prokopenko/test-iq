@@ -7,6 +7,8 @@ const refs = {
   menuTest: document.querySelector('.js-menu-test'),
 };
 
+// import { refs } from './refs';
+
 const handleOpenMenuClick = () => {
   refs.btnContainer.classList.add('is-open');
   refs.btnMenuOpen.setAttribute('aria-expanded', true);
